@@ -1,0 +1,30 @@
+.layout-form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  &.form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .wrapper-button {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      flex-basis: 50%;
+      max-width: 50%;
+      text-align: center;
+    }
+  }
+}
+
+/*Responsivness*/
+@include res("sm") {
+  .layout-form {
+    &.form-buttons {
+      .wrapper-button {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

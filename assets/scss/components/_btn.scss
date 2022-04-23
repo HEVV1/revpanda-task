@@ -1,0 +1,13 @@
+.btn{
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1rem;
+  min-width: 20rem;
+  background-color: $color_white;
+  &:not(:last-child){
+    margin-right: 2rem;
+  }
+}
